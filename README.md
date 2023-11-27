@@ -4,54 +4,62 @@
 
 ## Getting Started
 
-Clone the repository
+Requires Python 3.10+
 
-```
-git clone https://github.com/Karanraj06/social-networking-system.git
+1. To get started with this project, run
+
+```bash
+git clone https://github.com/Karanraj06/social-networking-system
 ```
 
-Create a `.env` file and add the `DATABASE_URL`
+2. Copy `.env.example` to `.env` file and update the variables
 
-```
+```bash
 cp .env.example .env
 ```
 
-Go to the `app` directory and run the python files as following:
+3. Install dependencies using pip
 
-```
-cd app
-python crud.py
-python seed.py
+```bash
+pip install -r requirements.txt
 ```
 
-Start the Fast API server
+Now, change the current working directory to `app`
 
-```
+4. Run the FastAPI Server with Uvicorn
+
+```bash
 uvicorn main:app --reload
 ```
 
-Open http://localhost:8000/docs to view the API documentation.
+Open http://localhost:8000/docs to view the API documentation
+
+5. Create tables and seed the database
+```bash
+python crud.py
+```
 
 ## Database Insider
 
-Clone the `prisma` branch
+1. Clone the repository
 
-```
-git clone https://github.com/Karanraj06/social-networking-system prisma
+```bash
+git clone https://github.com/Karanraj06/social-networking-system -b prisma
 ```
 
-Start prisma studio
+2. Start the app
 
-```
+```bash
 npx prisma studio
-or
+# or
 bunx prisma studio
 ```
 
-Open http://localhost:5555 to view it in your browser.
+Open http://localhost:5555 to view it in your browser
 
-## Contributors
-Atharva Suhas Mulay ([@AtharvaMulay25](https://github.com/AtharvaMulay25))<br>
-Karanraj Mehta ([@Karanraj06](https://github.com/Karanraj06))<br>
-Sahil Mangla ([@SahilMangla14](https://github.com/SahilMangla14))<br>
-Harsh Raj Srivastava ([@Harsh290803](https://github.com/Harsh290803))
+## Authors
+
+- Atharva Suhas Mulay ([@AtharvaMulay25](https://github.com/AtharvaMulay25))
+- Karanraj Mehta ([@Karanraj06](https://github.com/Karanraj06))
+- Sahil Mangla ([@SahilMangla14](https://github.com/SahilMangla14))
+- Harsh Raj Srivastava ([@Harsh290803](https://github.com/Harsh290803))
